@@ -1,8 +1,7 @@
 import { Box, Heading, Text, Flex, Link } from "@chakra-ui/react"
 import { ChakraProvider } from '@chakra-ui/provider'
 import { Image } from '@chakra-ui/image'
-export default function Bio(props)
-{
+export default function Bio(props) {
     return (
         <ChakraProvider>
             <Flex padding="1em" margin="1em" borderRadius="2em" backgroundColor="rgb(51 65 85)" width="300px" flexDirection="column" alignItems="center">
@@ -23,4 +22,3 @@ export default function Bio(props)
         </ChakraProvider>
     )
 }
-

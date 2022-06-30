@@ -1,10 +1,9 @@
 import Header from '../components/Header'
-import { Center, ChakraProvider, Flex, Image, Link } from "@chakra-ui/react";
+import { Center, ChakraProvider, Flex } from "@chakra-ui/react";
 import Bio from '../components/bio'
 import Footer from '../components/Footer'
 
-export default function About_us()
-{
+export default function About_us() {
     let members = [
         {
             'Name': 'Ben Carter',
@@ -48,8 +47,7 @@ export default function About_us()
             <Header pageName="About Us" />
             <Center bg="grey">
                 <Flex flexWrap="wrap" justifyContent="center">
-                    {members.map((item, index) =>
-                    {
+                    {members.map((item, index) => {
                         return <Bio key={index} member={item} />
                     })}
                 </Flex>
@@ -58,4 +56,3 @@ export default function About_us()
         </ChakraProvider>
     )
 }
-
